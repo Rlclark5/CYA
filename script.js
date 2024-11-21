@@ -1,24 +1,30 @@
-let left = document.querySelector('.left');
-let right = document.querySelector('.right');
-let leftRight = document.querySelector('.leftRight');
+let classroom  = document.querySelector('.classroom');
+let hallway = document.querySelector('.hallway');
+let eerieHallway = document.querySelector('.eerieHallway');
 let text = document.querySelector('p');
-let cfa = document.querySelector('.cfa');
-cfa.style.display ="none";
+let eerieClassroom = document.querySelector('.eerieClassroom');
+let hallway2 = document.querySelector('.hallway2');
+eerieClassroom.style.display ="none";
+hallway2.style.display ="none";
 
-left.addEventListener('click', function(){
+classroom.addEventListener('click', function(){
 
-    leftRight.style.display ="none";
-    left.style.display ="none";
-    right.style.display ="none";
-    cfa.style.display ="block";
+    console.log("classroom was clicked")
+    eerieHallway.style.display ="none";
+    classroom.style.display ="none";
+    hallway.style.display ="none";
+    eerieClassroom.style.display ="block";
 
-    text.innerHTML ="click to order";
+    text.innerHTML ="As you walk back into the classroom, you see that the student has disappeared and the lights shut off. You know theres a flashlight somewhere";
 
 });
 
 
-cfa.addEventListener('dblclick',  function() {
+eerieClassroom.addEventListener('dblclick',  function() {
 
-    text.innerHTML ="that was good";
+    text.innerHTML ="Help! ";
+    console.log("hallway2 was dbclicked");
+    eerieClassroom.style.display ="none";
+    hallway2.style.display ="block";
 
 });
