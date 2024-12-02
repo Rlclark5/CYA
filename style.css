@@ -1,6 +1,16 @@
 img {
     width: 300px;
 }
-
-
+body {
+    background-color: #222222;
+}
+p {
+    color: white;
+}
+.main{
+    width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: black;
+}
 
