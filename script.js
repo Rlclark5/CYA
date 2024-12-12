@@ -47,17 +47,12 @@ eerieClassroom.addEventListener('dblclick',  function() {
     console.log("hallway2 was dbclicked");
     eerieClassroom.style.display ="none";
     hallway2.style.display ="block";
+   
 
 });
 
-eerieClassroom.addEventListener('mouseleave',  function() {
 
-text.innerHTML ="Thank God ";
- console.log("hallway2 was mouse left");
-eerieClassroom.style.display ="none";
-lightClassroom.style.display ="block";
 
-});
 
 
 
@@ -71,10 +66,19 @@ zombieHallway.addEventListener('mouseenter',  function() {
 
 });
 
-document.addEventListener('keyr',  function(r) {
+document.addEventListener('keydown',  function(event) {
+    if(event.keyCode == 82) {
 text.innerHTML ="...You're in the..woods? Hey, atleast you're still alive.";
- console.log("hallway2 was mouse entered");
+ console.log("R was pressed");
 zombieHallway.style.display ="none";
 woods.style.display ="block";
 
+} else if (event.keyCode == 68) {
+        text.innerHTML ="Thank God ";
+    console.log("hallway2 was mouse left");
+   eerieClassroom.style.display ="none";
+   lightClassroom.style.display ="block";
+   woods.style.display ="none";
+
+}
 });
