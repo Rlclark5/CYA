@@ -2,10 +2,14 @@ img {
     width: 300px;
 }
 body {
-    background-img: url(https://img.pikbest.com/wp/202344/eerie-creepy-halloween-vibe-black-concrete-wall-with-a-dark-scary-background_9900247.jpg!w700wp);
+    background-image: url(background.jpg);
 }
 p {
     color: white;
+    font-family: Impact;
+    animation-name: colorchange;
+  animation-duration: 3s;
+  animation-iteration-count: 100000;
 }
 .main{
     width: 600px;
@@ -13,4 +17,8 @@ p {
     padding: 15px;
     background-color: black;
 }
+@keyframes colorchange {
+    from{color: black; }
+    to{color: white; }
+  }
 

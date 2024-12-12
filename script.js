@@ -23,7 +23,7 @@ classroom.addEventListener('click', function(){
     hallway.style.display ="none";
     eerieClassroom.style.display ="block";
 
-    text.innerHTML ="As you walk back into the classroom, you see that the student has disappeared and the lights shut off. Double click the image to go back to the hallway or hover over to find the light switch.";
+    text.innerHTML ="As you walk back into the classroom, you see that the student has disappeared and the lights shut off. Double click the image to go back to the hallway or press the D key to find the light switch.";
 
 });
 
@@ -37,7 +37,7 @@ hallway.addEventListener('click', function(){
     eerieClassroom.style.display ="none";
     eerieHallway.style.display ="none";
 
-    text.innerHTML ="Oh My Gosh! There's a zombie! Mouse enter to attempt to fight the zombie or press the r key to attempt to run past the zombie.";
+    text.innerHTML ="Oh My Gosh! There's a zombie! Mouse enter to attempt to fight the zombie or press the R key to attempt to run past the zombie.";
 
 });
 
